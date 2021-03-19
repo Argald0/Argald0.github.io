@@ -1,0 +1,10 @@
+title: Practical ethical hacking
+nav:
+    - Summary: practical_ethical_hacking.md
+    - Networking Refresher: peh-networking.md
+    - Introduction to Linux: peh-linux.md
+    - Introduction to Python: peh-python.md
+    - Information Gathering: peh-recon.md
+    - Scanning & Enumeration: peh-scanning_enumeration.md
+    - Exploitation Basics: peh-exploitation_basics.md
+    - Buffer Overflows: peh-buffer_overflow.md

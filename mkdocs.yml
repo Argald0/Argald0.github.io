@@ -1,0 +1,32 @@
+site_name: My Knowledge Database
+site_author: Argald0
+site_url: https://Argald0.github.io/
+repo_url: https://github.com/Argald0/Argald0.github.io
+repo_name: ArgaldO/ArgaldO.github.io
+site_description: This project will be my MkDocs knowledge database, where I store my notes, useful commands, articles, reports, write-ups (I hope)... In fact, everything I find around, so I can access it fast and easy.
+extra:
+  generator: false
+theme:
+  name: material
+  logo: images/argald0_logo.png
+  favicon: images/argald0_logo.png
+  palette:
+    scheme: slate
+    primary: pink
+    accent: amber
+  icon:
+    repo: fontawesome/brands/github
+
+
+
+plugins:
+  - search
+  - awesome-pages
+
+
+
+markdown_extensions:
+  - pymdownx.tasklist:
+      clickable_checkbox: false
+      custom_checkbox: true
+  - abbr
