@@ -4,7 +4,7 @@
 
 Display IP address in Linux : `$ ifconfig`  
 We communicate over **Layer 3**  (***Router***)  
-**NAT** : Network Address Translation  
+**NAT** $\to$ Network Address Translation  
 
 ### 1.2. Private IP addresses
 
@@ -18,37 +18,39 @@ Class C|**192.168**.0.0 to 192.168.255.255|255.255.255.0|2,097,151|254
 
 ## 2. MAC Addresses
 
-**MAC** : Media Access Control  
-**NIC** : Network Interface Card  
+**MAC** $\to$ Media Access Control
+**NIC** $\to$ Network Interface Card  
+
 Mac address lookup : first 3 pairs are identifiers  
 **Layer 2**, related to switching (***Switch***)  
 
 ## 3. TCP, UDP and the Three-Way Hanshake
 
 **Layer 4**  
-**TCP** : Transmission Control protocol  
-**UDP** : User Datagram Protocol  
+**TCP** $\to$ Transmission Control protocol  
+**UDP** $\to$ User Datagram Protocol  
 
 #### 3.1. TCP 3-way handshake
-
+<!--
 ```mermaid
 sequenceDiagram
     Host->>Server: SYN : Hey, can I connect ?
     Server->>Host: SYN ACK : Sure you can !
     Host->>Server: ACK : OK, I'm connecting !
 ```
+-->
 ![3way-handshake](images/3way-handshake-mermaid.png)
 
 ## 4. Common ports and protocols
 
 65,535 ports total  
-**FTP** : File Transfer Protocol  
-**Telnet** : Log remotely to a machine  
-**SSH** : Secure SHell (encrypted telnet)  
-**SMTP**, **IMAP**, **POP3** all relate to mail  
-**DNS** :  Domain Name System  
-**SMB** : File shares (*Samba*)  
-**SNMP** : Simple Network Management Protocol  
+**FTP** $\to$ File Transfer Protocol  
+**Telnet** $\to$ Log remotely to a machine  
+**SSH** $\to$ Secure SHell (encrypted telnet)  
+**SMTP**, **IMAP**, **POP3** $\to$ all relate to mail  
+**DNS** $\to$ Domain Name System  
+**SMB** $\to$ File shares (*Samba*)  
+**SNMP** $\to$ Simple Network Management Protocol  
 
 !!! note ""
     === "TCP"
@@ -77,18 +79,18 @@ sequenceDiagram
 
 ## 5. The OSI model
 
-1. **Physical** - data, cables, cat6
-2. **Data** - Switching, MAC addresses
-3. **Network** - IP addresses, routing
-4. **Transport** - TCP/UDP
-5. **Session** - session management
-6. **Presentation** - WMV, JPEG, MOV
-7. **Application** - HTTP, SMTP
+1. **Physical** $\to$ data, cables, cat6
+2. **Data** $\to$ Switching, MAC addresses
+3. **Network** $\to$ IP addresses, routing
+4. **Transport** $\to$ TCP/UDP
+5. **Session** $\to$ session management
+6. **Presentation** $\to$ WMV, JPEG, MOV
+7. **Application** $\to$ HTTP, SMTP
 
 ## 6. Subnetting
   
 Subnetting Cybermentor Excel [Cheatsheet](files/Subnet-Guide.xlsx)
 
-Link to [IP Address Guide](<https://ipaddressguide.com>)
+Link to site [IP Address Guide](<https://ipaddressguide.com>)
 
 ![Cyber Mentor Subnetting](images/peh-subnetting-cheatsheet.JPG)

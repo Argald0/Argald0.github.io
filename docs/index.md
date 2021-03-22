@@ -4,7 +4,7 @@ Woby is my knowledge database, built using MkDocs Material, in order to make it 
 
 ## Site Layout :thumbsup:
 
-- Markdown cheatsheet
+- [Markdown cheatsheet](./md_cheatsheet.md)
 - Practical ethical hacking
     - Networking, Linux & Python basics
     - Reconnaissance, Scanning & Enumeration
@@ -15,3 +15,5 @@ Woby is my knowledge database, built using MkDocs Material, in order to make it 
 - Internet of Things
     - RFID (**R**adio **F**requency **ID**entifier)
 
+*[RFID]: Radio Frequency IDentifier
+*[Practical ethical hacking]: by The Cyber Mentor

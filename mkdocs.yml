@@ -3,6 +3,7 @@ site_author: Argald0
 site_url: https://Argald0.github.io/
 repo_url: https://github.com/Argald0/Argald0.github.io
 repo_name: ArgaldO/ArgaldO.github.io
+copyright: Copyright &copy; 2021 Argald0
 site_description: This project will be my MkDocs knowledge database, where I store my notes, useful commands, articles, reports, write-ups (I hope)... In fact, everything I find around, so I can access it fast and easy.
 extra:
   generator: false
@@ -18,13 +19,35 @@ theme:
     repo: fontawesome/brands/github
   features:
     - navigation.tabs
+    - header.autohide
 
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/0x4rg41d0
+      name: My humble twitter
+    - icon: fontawesome/brands/github
+      link: https://github.com/Argald0
+      name: Github
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:78689575+Argald0@users.noreply.github.com
+      name: Mail
 
 
 
 plugins:
   - search
   - awesome-pages
+
+
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
 
 
 
@@ -36,3 +59,18 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tilde
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - def_list
+  - pymdownx.keys
+  - pymdownx.snippets
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      linenums_style: pymdownx.inline
+  - pymdownx.critic

@@ -107,21 +107,27 @@ Example<sub>subscript</sub>
 ---
 ## 5. Images
 
-#### 5.1. Local
+=== "Local picture with caption"
 
-```md
-![icone](images/argald0_logo.png)
-```
+    ```md
+    <figure>
+        <img src="../images/argald0_logo.png" width="300" />
+        <figcaption>My logo caption</figcaption>
+    </figure>
+    ```
 
-![icone](images/argald0_logo.png)
+    <figure>
+        <img src="../images/argald0_logo.png" width="300" />
+        <figcaption>My logo caption</figcaption>
+    </figure>
 
-#### 5.2. Online
+=== "Online picture aligned right"
 
-```md
-![Image](<https://full/path/to/picture.png>)
-```
+    ![Image](<https://static-s.aa-cdn.net/img/ios/1165192859/5ac4c0723f8587cbf39f44583f4a7012>){align=right}
 
-![Image](<https://static-s.aa-cdn.net/img/ios/1165192859/5ac4c0723f8587cbf39f44583f4a7012>)
+    ```md
+    ![Image](<https://full/path/to/picture>){align=right}
+    ```
 
 ---
 ## 6. Tables
@@ -142,17 +148,21 @@ align left | center | align right
 ## 7. Math
 
 ```md
-$\varphi^{\theta=2}_{3}$
-$$\begin{vmatrix}a & b\\
+$\varphi^{\theta\to2}_{3}$  
+
+$\begin{vmatrix}a & b\\
 c & d
-\end{vmatrix}=ad-bc$$
+\end{vmatrix}=ad-bc$  
+
 $\frac{\frac{x}{1}}{x - y}$
 ```
 
-$\varphi^{\theta=2}_{3}$
-$$\begin{vmatrix}a & b\\
+$\varphi^{\theta\to2}_{3}$  
+
+$\begin{vmatrix}a & b\\
 c & d
-\end{vmatrix}=ad-bc$$
+\end{vmatrix}=ad-bc$  
+
 $\frac{\frac{x}{1}}{x - y}$
 
 ---
@@ -182,7 +192,7 @@ Text inside `backticks` on a line will be formatted like code.
 
 #### 9.2. Code blocks
 
-    ``` python linenums="1" hl_lines="2 3"
+    ``` python linenums="1" hl_lines="2 4"
     def bubble_sort(items):
         for i in range(len(items)):
             for j in range(len(items) - 1 - i):
@@ -190,7 +200,7 @@ Text inside `backticks` on a line will be formatted like code.
                     items[j], items[j + 1] = items[j + 1], items[j]
     ```
 
-``` python linenums="1" hl_lines="2 3"
+``` python linenums="1" hl_lines="2 4"
 def bubble_sort(items):
     for i in range(len(items)):
         for j in range(len(items) - 1 - i):
@@ -230,136 +240,31 @@ def bubble_sort(items):
         }
         ```
 
-=== "C"
+!!! warning "Tabbed Codeblocks"
+    === "C"
 
-    ``` c
-    #include <stdio.h>
+        ``` c
+        #include <stdio.h>
 
-    int main(void) {
-      printf("Hello world!\n");
-      return 0;
-    }
-    ```
+        int main(void) {
+        printf("Hello world!\n");
+        return 0;
+        }
+        ```
 
-=== "C++"
+    === "C++"
 
-    ``` c++
-    #include <iostream>
+        ``` c++
+        #include <iostream>
 
-    int main(void) {
-      std::cout << "Hello world!" << std::endl;
-      return 0;
-    }
-    ```
-
----
-## 10. Diagram
-
-**Type**|**Description**
-:---|:---
-->|Solid line without arrow
--->|Dotted line without arrow
-->>|Solid line with arrowhead
--->>|Dotted line with arrowhead
--x|Solid line with a cross at the end
---x|Dotted line with a cross at the end.
--)|Solid line with an open arrowat the end (async)
---)|Dotted line with a open arrow at the end (async)
-
-#### Example 1 with notes :
-
-    ```mermaid
-    sequenceDiagram
-        Alice->>+John: Hello John, how are you?
-        Alice->>+John: John, can you hear me?
-        John-->>-Alice: Hi Alice, I can hear you!
-        John-->>-Alice: I feel great!
-	    Note right of John: Text in note
-	    Note over Alice,John: A typical interaction
-    ```
-
-```mermaid
-sequenceDiagram
-    Alice->>+John: Hello John, how are you?
-    Alice->>+John: John, can you hear me?
-    John-->>-Alice: Hi Alice, I can hear you!
-    John-->>-Alice: I feel great!
-	Note right of John: Text in note
-	Note over Alice,John: A typical interaction
-```
-
-#### Example 2 with loop and alt :
-
-    ```mermaid
-    sequenceDiagram
-        Alice->John: Hello John, how are you?
-        loop Every minute
-            John-->Alice: Great!
-        end
-        Alice->>Bob: Hello Bob, how are you?
-        alt is sick
-            Bob->>Alice: Not so good :(
-        else is well
-            Bob->>Alice: Feeling fresh like a daisy
-        end
-        opt Extra response
-            Bob->>Alice: Thanks for asking
-        end
-    ```
-
-```mermaid
-sequenceDiagram
-	Alice->John: Hello John, how are you?
-    loop Every minute
-        John-->Alice: Great!
-    end
-    Alice->>Bob: Hello Bob, how are you?
-    alt is sick
-        Bob->>Alice: Not so good :(
-    else is well
-        Bob->>Alice: Feeling fresh like a daisy
-    end
-    opt Extra response
-        Bob->>Alice: Thanks for asking
-    end
-```
-
-#### Parallel and background highlighting :
-
-```md
-Parallel :
-par [Action 1]
-... statements ...
-and [Action 2]
-... statements ...
-and [Action N]
-... statements ...
-end
-
-Background :
-rect rgba(0, 0, 255, .1)
-... content ...
-end
-```
-
-#### Example with comments :
-
-    ```mermaid
-    sequenceDiagram
-        Alice->>John: Hello John, how are you?
-        %% this is a comment
-        John-->>Alice: Great!
-    ```
-
-```mermaid
-sequenceDiagram
-    Alice->>John: Hello John, how are you?
-    %% this is a comment
-    John-->>Alice: Great!
-```
+        int main(void) {
+        std::cout << "Hello world!" << std::endl;
+        return 0;
+        }
+        ```
 
 ---
-## 11. Admonition
+## 10. Admonition
 
 ```md
 !!! note "Phasellus posuere in sem ut cursus"
