@@ -18,7 +18,7 @@ Class C|**192.168**.0.0 to 192.168.255.255|255.255.255.0|2,097,151|254
 
 ## 2. MAC Addresses
 
-**MAC** $\to$ Media Access Control
+**MAC** $\to$ Media Access Control  
 **NIC** $\to$ Network Interface Card  
 
 Mac address lookup : first 3 pairs are identifiers  
@@ -43,7 +43,7 @@ sequenceDiagram
 
 ## 4. Common ports and protocols
 
-65,535 ports total  
+65,535 ports total $\to$ 1024 "**well-known**" ports  
 **FTP** $\to$ File Transfer Protocol  
 **Telnet** $\to$ Log remotely to a machine  
 **SSH** $\to$ Secure SHell (encrypted telnet)  
