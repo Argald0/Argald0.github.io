@@ -12,9 +12,18 @@ theme:
   logo: images/argald0_logo.png
   favicon: images/argald0_logo.png
   palette:
-    scheme: slate
-    primary: pink
-    accent: amber
+    - scheme: slate
+      primary: orange
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Light Mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
   icon:
     repo: fontawesome/brands/github
   features:
