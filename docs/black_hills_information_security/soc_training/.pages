@@ -1,0 +1,5 @@
+title: SOC Core Skills
+nav:
+    - Intro: bhis-intro.md
+    - Linux: bhis-linux.md
+    - Windows: bhis-windows.md
