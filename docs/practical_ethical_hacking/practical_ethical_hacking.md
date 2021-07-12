@@ -15,3 +15,35 @@ by TheCyberMentor
 - 10 [Web Application](peh-web_app.md)
 - 11 [Wireless Pentesting](peh-wireless_pentest.md)
 - 12 [Report Writing](peh-report_writing.md)
+
+## The Ethical Hacker Methodology : The five stages of ethical hacking
+
+- First stage : Reconnaissance (information gathering) can be active or passive
+- Second stage : Scanning and Enumeration
+- Third stage : Exploitation (gaining access)
+- Fourth stage : Maintaining Access
+- Fifth stage : Covering Tracks
+
+## Tools
+
+- Passive Recon :
+    - Hunter.io [(site)]:(<https://hunter.io>)
+    - breach-parse [(github)]:(<https://github.com/hmaverickadams/breach-parse>)
+    - theharvester [(github)]:(<https://github.com/laramies/theHarvester>)
+    - sublist3r
+    - crt.sh [(site)]:(<https://crt.sh>)
+    - Amass [(github)]:(<https://github.com/OWASP/Amass>)
+    - httprobe  [(github)]:(<https://github.com/tomnomnom/httprobe>)
+    - BuiltWith.com [(site)]:(<https://builtwith.com>)
+    - wappalyzer
+    - whatweb [(github)]:(<https://github.com/urbanadventurer/WhatWeb>)
+    - BurpSuite
+- Scanning & Enumeration :
+    - nmap
+    - nikto
+    - dirbuster / dirsearch
+    - Masscan
+    - Nessus
+    - Metasploit
+- Exploitation :
+    - 
