@@ -186,13 +186,12 @@ $\frac{\frac{x}{1}}{x - y}$
 ```md
 Text inside `backticks` on a line will be formatted like code.
 ```
-++ctrl+alt+del++
 
 Text inside `backticks` on a line will be formatted like code.
 
 #### 9.2. Code blocks
 
-    ``` python linenums="1" hl_lines="2 4"
+    ``` python linenums="2" hl_lines="2 4"
     def bubble_sort(items):
         for i in range(len(items)):
             for j in range(len(items) - 1 - i):
@@ -200,7 +199,7 @@ Text inside `backticks` on a line will be formatted like code.
                     items[j], items[j + 1] = items[j + 1], items[j]
     ```
 
-``` python linenums="1" hl_lines="2 4"
+``` python linenums="2" hl_lines="2 4"
 def bubble_sort(items):
     for i in range(len(items)):
         for j in range(len(items) - 1 - i):

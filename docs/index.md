@@ -8,16 +8,17 @@ Woby is my knowledge database, built using MkDocs Material, in order to make it 
 - Practical ethical hacking
     - [Networking](practical_ethical_hacking/peh-networking.md), [Linux](practical_ethical_hacking/peh-linux.md) & [Python](practical_ethical_hacking/peh-python.md) basics
     - [Reconnaissance](practical_ethical_hacking/peh-recon.md), [Scanning & Enumeration](practical_ethical_hacking/peh-scanning_enumeration.md)
-    - Active Directory basics
-    - Exploitation & Buffer Overflows
-    - Web Application & Wireless pentesting
+    - [Active Directory](practical_ethical_hacking/peh-ad_attack.md)
+    - [Exploitation](practical_ethical_hacking/peh-exploitation_basics.md) & [Buffer Overflows](practical_ethical_hacking/peh-buffer_overflow.md)
+    - [Web Application](practical_ethical_hacking/peh-web_app.md) & [Wireless pentesting](practical_ethical_hacking/peh-wireless_pentest.md)
     - Post-Exploitation & Report Writing
+- Tools
+    - [Nmap](tools/nmap.md)
+    - [Hydra](tools/hydra.md)
+    - [SQLite3](tools/sqlite3.md)
 - Internet of Things
     - [RFID](iot/rfid_prez.md)
-- TryHackMe rooms
-    - [Nmap](thm_knowledge/nmap.md)
-    - [Hydra](thm_knowledge/hydra.md)
-    - [SQLite3](thm_knowledge/sqlite3.md)
+- TryHackMe knowledge
     - [HTTP](thm_knowledge/http.md)
     - [XML](thm_knowledge/xml.md)
 

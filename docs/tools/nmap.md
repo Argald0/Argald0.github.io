@@ -1,5 +1,4 @@
 # Nmap
-<div style="text-align: right"> <sub>from the TryHackMe room of the same name</sub> </div>
 
 Network Mapper (Nmap) : port scanner.
 

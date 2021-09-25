@@ -1,5 +1,4 @@
 # Hydra
-<div style="text-align: right"> <sub>from the TryHackMe room of the same name</sub> </div>
 
 ## Typical commands
 
