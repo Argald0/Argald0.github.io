@@ -47,3 +47,14 @@ by TheCyberMentor
     - Metasploit
 - Exploitation :
     - Metasploit
+
+## Mindmap
+
+First things first : `nmap -T4 -A -v -p- $IP`
+
+#### Port 80
+
+- `nikto $IP`
+- `curl -I $IP`
+- Open browser
+- Burpsuite

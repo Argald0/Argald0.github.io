@@ -67,6 +67,7 @@ sequenceDiagram
         POP3 | 110
         SMB | 139 + 445
         IMAP | 143
+        RDP | 3389
     
     === "UDP"
     

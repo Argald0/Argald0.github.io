@@ -19,9 +19,16 @@ Web/Host
 3. Fingerprinting : Nmap, Wappalyzer, WhatWeb, BuiltWith, Netcat
 4. Data Breaches : HIBP, Breach-Parse, WeLeakInfo
 
-### 1.1. Email address gathering with Hunter.io
+### 1.1. Email address gathering and testing
 
 **Hunter.io** : Search for email addresses, and compare through LinkedIn
+**Phonebook.cz** : domains/email/urls
+**voilanorbert.com** : same
+**Clearbit** on Chrome
+**emailhippo** : test the found email addresses
+**email-checker.net** : same
+
+
 
 ### 1.2. gathering breached credentials with breach-parse
 
@@ -51,6 +58,8 @@ flag|description
 $ theharvester -d tesla.com -l 500 -b google
 ```
 
+3. **dehashed.com** : <https://dehashed.com/>
+
 ### 1.3. Hunting subdomains
 
 - **sublist3r** :
@@ -75,7 +84,7 @@ Install process :
 
 - install and run
 - setup foxyproxy
-- surf the web and let the magic happen :slight-smile:
+- surf the web and let the magic happen :slight_smile:
 
 ### 1.6. Google Fu
 
